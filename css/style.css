@@ -53,11 +53,12 @@ html {
 .container {
   display: flex;
   flex-direction: column;
-  width: 38rem;
+  width: 40rem;
   /* height: 50rem; */
   background-color: #fff;
   margin: 10% auto;
   border-radius: 9px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 .heading-img {
   border-radius: 9px 9px 0 0;
@@ -66,7 +67,8 @@ html {
   padding: 3.2rem;
 }
 .heading {
-  padding-bottom: 1.8rem;
+  font-size: 2.8rem;
+  padding-bottom: 1.6rem;
   color: hsl(231, 43%, 24%);
 }
 .summary-info {
@@ -86,9 +88,10 @@ html {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 .annual-subscription {
-  margin-left: -1.8rem;
+  margin-left: -4rem;
 }
-.annual-subscription h4 {
+.annual-subscription h2 {
+  font-size: 1.6rem;
   color: hsl(231, 43%, 24%);
 }
 .annual-subscription p {
