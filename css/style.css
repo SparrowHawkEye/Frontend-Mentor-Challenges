@@ -1,0 +1,154 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg)
+    top center no-repeat;
+  background-size: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  height: 100vh;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 38rem;
+  /* height: 50rem; */
+  background-color: #fff;
+  margin: 10% auto;
+  border-radius: 9px;
+}
+.heading-img {
+  border-radius: 9px 9px 0 0;
+}
+.section-order {
+  padding: 3.2rem;
+}
+.heading {
+  padding-bottom: 1.8rem;
+  color: hsl(231, 43%, 24%);
+}
+.summary-info {
+  color: hsl(218, 5%, 55%);
+  text-align: center;
+  padding: 0 1.2rem;
+}
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem 0;
+  margin: 0 3.2rem 2.4rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.annual-subscription {
+  margin-left: -1.8rem;
+}
+.annual-subscription h4 {
+  color: hsl(231, 43%, 24%);
+}
+.annual-subscription p {
+  color: hsl(220, 5%, 55%);
+}
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  border: none;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.change-plan:link,
+.change-plan:visited {
+  display: inline-block;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+
+  transition: all 0.3s;
+}
+.change-plan:hover,
+.change-plan:active {
+  text-decoration: none;
+  color: hsl(245, 75%, 65%);
+}
+.payment {
+  padding: 1.6rem 1.2rem;
+  margin: 0 3.2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px hsla(245, 75%, 52%, 0.45);
+  transition: all 0.3s;
+}
+.payment:hover {
+  background-color: hsl(245, 75%, 65%);
+}
+.cancel-order {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1.8rem 0 2.4rem 0;
+  color: hsl(220, 5%, 55%);
+}
+.cancel-order:hover {
+  color: hsl(231, 43%, 24%);
+  transition: 0.3s;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 59em) {
+  body {
+    background: hsl(225, 100%, 94%)
+      url(../images/pattern-background-desktop.svg) top/100% no-repeat;
+  }
+}
